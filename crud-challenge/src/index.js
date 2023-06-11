@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Create from './Create';
 
 const router = createBrowserRouter([
   {
@@ -13,10 +14,10 @@ const router = createBrowserRouter([
   //   path: "/:id",
   //   element: <Update />,
   // },
-  // {
-  //   path: "/create",
-  //   element: <Create />,
-  // }
+  {
+    path: "/create",
+    element: <Create />,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
