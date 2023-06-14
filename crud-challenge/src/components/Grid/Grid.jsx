@@ -1,17 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import { Wrapper } from './GridStyles'
 import Card from '../Card/Card';
-import axios from 'axios';
+import { AppContext } from '../../context/AppContext';
 
 function Grid() {
-    const [posts, setPosts] = useState([]);
-
-    useEffect(() => {
-        axios.get('http://localhost:3001/posts')
-            .then((res) => {
-                setPosts(res.data);
-            })
-    }, []);
+    const {posts} = useContext(AppContext)
 
     return (
         <Wrapper>
