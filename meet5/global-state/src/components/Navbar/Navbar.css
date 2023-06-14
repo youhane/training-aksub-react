@@ -1,0 +1,13 @@
+ul{
+    list-style-type: none;
+    margin: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    gap: 1rem;
+    font-size: x-large;
+}
